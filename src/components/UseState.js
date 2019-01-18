@@ -8,7 +8,6 @@ import { routes } from '../constants/routes';
 import { UseState, UseStateII, UseStateIII, UseStateIV } from './withHooks/useState/index';
 import { WithState, WithStateII, WithStateIII, WithStateIV } from './withoutHooks/withState/index';
 
-
 class UseStatePage extends Component {
 	render() {
 		return (
@@ -25,32 +24,32 @@ class UseStatePage extends Component {
 					<WithState />
 				</div>
 				<div >
-					<CodeBlock filePath={'withHooks/useState.js'} />
-					<CodeBlock filePath={'withoutHooks/withState.js'} />
+					<CodeBlock filePath={'withHooks/useState/useState.1.js'} />
+					<CodeBlock filePath={'withoutHooks/withState/withState.1.js'} />
 				</div >
 				<div className='contentBox'>
 					<UseStateII count={100} />
 					<WithStateII count={100} />
 				</div>
 				<div >
-					<CodeBlock filePath={'withHooks/useState.2.js'} />
-					<CodeBlock filePath={'withoutHooks/withState.2.js'} />
+					<CodeBlock filePath={'withHooks/useState/useState.2.js'} />
+					<CodeBlock filePath={'withoutHooks/withState/withState.2.js'} />
 				</div >
 				<div className='contentBox'>
 					<UseStateIII />
 					<WithStateIII />
 				</div>
 				<div >
-					<CodeBlock filePath={'withHooks/useState.3.js'} />
-					<CodeBlock filePath={'withoutHooks/withState.3.js'} />
+					<CodeBlock filePath={'withHooks/useState/useState.3.js'} />
+					<CodeBlock filePath={'withoutHooks/withState/withState.3.js'} />
 				</div >
 				<div className='contentBox'>
 					<UseStateIV />
 					<WithStateIV />
 				</div>
 				<div >
-					<CodeBlock filePath={'withHooks/useState.4.js'} />
-					<CodeBlock filePath={'withoutHooks/withState.4.js'} />
+					<CodeBlock filePath={'withHooks/useState/useState.4.js'} />
+					<CodeBlock filePath={'withoutHooks/withState/withState.4.js'} />
 				</div >
 			</div >
 		);
