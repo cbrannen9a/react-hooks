@@ -21,7 +21,7 @@
 		"predeploy": "yarn run build",
 		"deploy": "gh-pages -d build"
 	},
-	"homepage": "http://cbrannen9a.github.io/react-hooks-partii/",
+	"homepage": "http://cbrannen9a.github.io/react-hooks/",
 	"eslintConfig": {
 		"extends": "react-app",
 		"plugins": [

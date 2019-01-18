@@ -1,6 +1,6 @@
 export const routes = {
 	BASE: '/',
-	HOME: '/react-hooks-partii/',
-	USESTATE: '/react-hooks-partii/useState/'
+	HOME: '/react-hooks/',
+	USESTATE: '/react-hooks/useState/'
 
 };
