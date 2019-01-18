@@ -26,7 +26,7 @@ const CodeBlock = (props) => {
 	}, [props.filePath]);
 
 	return (loading ? <div>Loading...</div> :
-		<div>
+		<div className='code'>
 			<SyntaxHighlighter
 				language='javascript'
 				style={codeStyle}
