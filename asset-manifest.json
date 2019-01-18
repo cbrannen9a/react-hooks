@@ -1,14 +1,13 @@
 {
-  "main.css": "/react-hooks/static/css/main.8edffda8.chunk.css",
-  "main.js": "/react-hooks/static/js/main.956b4b2f.chunk.js",
-  "main.js.map": "/react-hooks/static/js/main.956b4b2f.chunk.js.map",
-  "static/js/1.91f62f94.chunk.js": "/react-hooks/static/js/1.91f62f94.chunk.js",
-  "static/js/1.91f62f94.chunk.js.map": "/react-hooks/static/js/1.91f62f94.chunk.js.map",
+  "main.css": "/react-hooks/static/css/main.e1861a05.chunk.css",
+  "main.js": "/react-hooks/static/js/main.9d03d8df.chunk.js",
+  "main.js.map": "/react-hooks/static/js/main.9d03d8df.chunk.js.map",
+  "static/js/1.85466afd.chunk.js": "/react-hooks/static/js/1.85466afd.chunk.js",
+  "static/js/1.85466afd.chunk.js.map": "/react-hooks/static/js/1.85466afd.chunk.js.map",
   "runtime~main.js": "/react-hooks/static/js/runtime~main.c0555af0.js",
   "runtime~main.js.map": "/react-hooks/static/js/runtime~main.c0555af0.js.map",
-  "static/media/useState.md": "/react-hooks/static/media/useState.3ad4fb48.md",
-  "static/css/main.8edffda8.chunk.css.map": "/react-hooks/static/css/main.8edffda8.chunk.css.map",
+  "static/css/main.e1861a05.chunk.css.map": "/react-hooks/static/css/main.e1861a05.chunk.css.map",
   "index.html": "/react-hooks/index.html",
-  "precache-manifest.ad5b9091ebb473ea0ef0208bd2c46418.js": "/react-hooks/precache-manifest.ad5b9091ebb473ea0ef0208bd2c46418.js",
+  "precache-manifest.09639b7bacfcd64cd8893f02ffebbf55.js": "/react-hooks/precache-manifest.09639b7bacfcd64cd8893f02ffebbf55.js",
   "service-worker.js": "/react-hooks/service-worker.js"
 }
