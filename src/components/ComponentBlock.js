@@ -13,9 +13,7 @@ const ComponentBlock = ({ component, fileName, title }) => {
 					<MarkdownBlock key={fileName} filePath={fileName} />
 				</div>
 			</div>
-			<div className='contentBox'>
-				<CodeBlock key={fileName} filePath={fileName} />
-			</div>
+			<CodeBlock key={fileName} filePath={fileName} />			
 		</div>
 	);
 };

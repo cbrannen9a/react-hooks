@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import LinkButton from './utilities/LinkButton';
 
 import { routes } from '../constants/routes';
 
 const Home = () => {
-	return (<div className='App-header'>
-
-		<button className='button'>
-			<Link to={routes.USESTATE}>UseState</Link>
-		</button>
-	</div>
+	return (
+		<div className='App-header'>
+			<LinkButton to={routes.USESTATE} title='UseState' />			
+		</div>
 	);
 };
 

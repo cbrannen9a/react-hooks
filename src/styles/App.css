@@ -18,6 +18,11 @@
   color: white;
 }
 
+.App-bar {
+  background-color: #282c34; 
+  text-align: right;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -54,6 +59,17 @@
     background-image: none;
 	border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.rounded-button {
+	background-color: white;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px ;
+	border-radius: 20%;
 }
 
 .contentBox {

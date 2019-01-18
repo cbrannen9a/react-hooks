@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom';
-
-import { routes } from '../constants/routes';
+import LinkButton from './utilities/LinkButton';
 import ComponentBlock from './ComponentBlock';
 import {
 	UseState,
@@ -16,6 +14,8 @@ import {
 	WithStateIII,
 	WithStateIV
 } from './withoutHooks/withState/index';
+
+import { routes } from '../constants/routes';
 
 const getExample = (example) => {
 	switch (example) {
@@ -34,11 +34,11 @@ const getExample = (example) => {
 		case 2:
 			return (<div>
 				<ComponentBlock
-					component={<UseStateII />}
+					component={<UseStateII count={100}/>}
 					fileName='withHooks/useState/useState.2'
 					title='With Hooks example 2' />
 				<ComponentBlock
-					component={<WithStateII />}
+					component={<WithStateII count={100}/>}
 					fileName='withoutHooks/withState/withState.2'
 					title='Without Hooks' />
 			</div>);
@@ -76,18 +76,27 @@ const getExample = (example) => {
 
 const UseStatePage = () => {
 	const [example, setExample] = useState(1);
-	const examples = [1, 2, 3, 4];
+	const examples = ['<', 1, 2, 3, 4, '>'];
 
-	return (
+	const handleClick = (e)=>{
+		if(e === '<' ) {
+			if(example === 1) {return;}
+			return setExample(example - 1);
+		} else if (e === '>'){
+			if(example === (examples.length - 2)) {return;}
+			return setExample(example + 1);
+		} 
+		return setExample(e);
+	};
+
+	return (		
 		<div className='App-content'>
-			<button className='button'>
-				<Link to={routes.HOME}>Back</Link>
-			</button>
+			<LinkButton to={routes.HOME} title='Home' />
 			{examples.map(e =>
 				<button
 					className='button'
 					key={e}
-					onClick={() => setExample(e)}>
+					onClick={() => handleClick(e)}>
 					{e}</button>
 			)}
 			{getExample(example)}
