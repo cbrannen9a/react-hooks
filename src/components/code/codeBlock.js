@@ -9,7 +9,7 @@ const CodeBlock = (props) => {
 
 	useEffect(() => {
 		if (loading) {
-			fetch(filePathHelper(props.filePath))
+			fetch(filePathHelper(props.filePath + '.js'))
 				.then(resp => {
 					if (!resp.ok) {
 						throw new Error(resp.statusText);
@@ -23,7 +23,7 @@ const CodeBlock = (props) => {
 				});
 			setLoading(false);
 		}
-	});
+	}, [props.filePath]);
 
 	return (loading ? <div>Loading...</div> :
 		<div>

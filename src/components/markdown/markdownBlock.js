@@ -8,7 +8,7 @@ const MarkdownBlock = (props) => {
 
 	useEffect(() => {
 		if (loading) {
-			fetch(filePathHelper(props.filePath))
+			fetch(filePathHelper(props.filePath + '.md'))
 				.then(resp => {
 					if (!resp.ok) {
 						throw new Error(resp.statusText);
@@ -22,7 +22,7 @@ const MarkdownBlock = (props) => {
 				});
 			setLoading(false);
 		}
-	});
+	}, [props.filePath]);
 
 	return (loading ? <div>Loading...</div>
 		: <ReactMarkdown source={markdown} />);
