@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { tomorrow as codeStyle } from 'react-syntax-highlighter/dist/styles/prism';
+
+import CodeBlock from './code/codeBlock';
 
 import { routes } from '../constants/routes';
-import { UseState, UseStateII, UseStateIII, UseStateIV, useStateStrings } from './withHooks/useState';
-import { WithState, WithStateII, WithStateIII, WithStateIV, withStateStrings } from './withoutHooks/withState';
+import { UseState, UseStateII, UseStateIII, UseStateIV } from './withHooks/useState/index';
+import { WithState, WithStateII, WithStateIII, WithStateIV } from './withoutHooks/withState/index';
+
 
 class UseStatePage extends Component {
 	render() {
@@ -24,81 +25,32 @@ class UseStatePage extends Component {
 					<WithState />
 				</div>
 				<div >
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{useStateStrings.I}
-					</SyntaxHighlighter>
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{withStateStrings.I}
-					</SyntaxHighlighter>
+					<CodeBlock filePath={'withHooks/useState.js'} />
+					<CodeBlock filePath={'withoutHooks/withState.js'} />
 				</div >
 				<div className='contentBox'>
 					<UseStateII count={100} />
 					<WithStateII count={100} />
 				</div>
 				<div >
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{useStateStrings.II}
-					</SyntaxHighlighter>
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{withStateStrings.II}
-					</SyntaxHighlighter>
+					<CodeBlock filePath={'withHooks/useState.2.js'} />
+					<CodeBlock filePath={'withoutHooks/withState.2.js'} />
 				</div >
 				<div className='contentBox'>
-
 					<UseStateIII />
 					<WithStateIII />
 				</div>
 				<div >
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{useStateStrings.III}
-					</SyntaxHighlighter>
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{withStateStrings.III}
-					</SyntaxHighlighter>
+					<CodeBlock filePath={'withHooks/useState.3.js'} />
+					<CodeBlock filePath={'withoutHooks/withState.3.js'} />
 				</div >
 				<div className='contentBox'>
 					<UseStateIV />
 					<WithStateIV />
 				</div>
 				<div >
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{useStateStrings.IV}
-					</SyntaxHighlighter>
-					<SyntaxHighlighter
-						language="javascript"
-						style={codeStyle}
-						customStyle={{ borderRadius: '10px', padding: '1.5em' }}
-					>
-						{withStateStrings.IV}
-					</SyntaxHighlighter>
+					<CodeBlock filePath={'withHooks/useState.4.js'} />
+					<CodeBlock filePath={'withoutHooks/withState.4.js'} />
 				</div >
 			</div >
 		);

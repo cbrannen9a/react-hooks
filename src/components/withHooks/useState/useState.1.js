@@ -1,5 +1,6 @@
-```js
-export const UseState = () => {
+import React, { useState } from 'react';
+
+const UseState = () => {
 	//Declare state value of count and setCount function to update
 	//set the initial value of count as 0
 	const [count, setCount] = useState(0);
@@ -17,4 +18,5 @@ export const UseState = () => {
 		</div>
 	);
 };
-```
+
+export default UseState;
