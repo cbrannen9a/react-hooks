@@ -3,29 +3,48 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import CodeBlock from './code/codeBlock';
+import MarkdownBlock from './markdown/markdownBlock';
 
 import { routes } from '../constants/routes';
-import { UseState, UseStateII, UseStateIII, UseStateIV } from './withHooks/useState/index';
-import { WithState, WithStateII, WithStateIII, WithStateIV } from './withoutHooks/withState/index';
+import {
+	UseState,
+	UseStateII,
+	UseStateIII,
+	UseStateIV
+} from './withHooks/useState/index';
+
+import {
+	WithState,
+	WithStateII,
+	WithStateIII,
+	WithStateIV
+} from './withoutHooks/withState/index';
 
 class UseStatePage extends Component {
 	render() {
 		return (
-			<div className='App-header'>
+			<div className='App-content'>
 				<button className='button'>
 					<Link to={routes.HOME}>Back</Link>
 				</button>
-				<div className='contentBox'>
-					<h3 className='content'>With Hooks</h3>
-					<h3 className='content'>Without Hooks</h3>
-				</div>
+				<h3 className='content'>With Hooks</h3>
 				<div className='contentBox'>
 					<UseState />
-					<WithState />
+					<div className='content'>
+						<MarkdownBlock filePath={'withHooks/useState/useState.1.md'} />
+					</div>
+				</div>
+				<div className='contentBox'>
+
+					<CodeBlock filePath={'withHooks/useState/useState.1.js'} />
 				</div>
 				<div >
-					<CodeBlock filePath={'withHooks/useState/useState.1.js'} />
-					<CodeBlock filePath={'withoutHooks/withState/withState.1.js'} />
+					<h3 className='content'>Without Hooks</h3>
+					<WithState /><CodeBlock filePath={'withoutHooks/withState/withState.1.js'} />
+				</div>
+				<div >
+
+
 				</div >
 				<div className='contentBox'>
 					<UseStateII count={100} />

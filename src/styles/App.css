@@ -31,6 +31,10 @@
   }
 }
 
+.App-content {
+	 background-color: #282c34;
+}
+
 .button {
 	display: inline-block;
     padding: 6px 12px;
@@ -61,7 +65,6 @@
 }
 
 .content {
-	width: 45vw;
 	border-style: groove;
 	margin: 3px;
 	padding: 10px;

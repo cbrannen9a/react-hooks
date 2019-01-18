@@ -17,8 +17,8 @@ const App = () => {
 				<Switch>
 					<Route exact path={routes.HOME} component={Home} />
 					<Route exact path={routes.USESTATE} component={UseState} />
+					<Redirect from={routes.BASE} to={routes.HOME} />
 					<Route component={NotFound} />
-					<Redirect from={routes.BASE} to={routes.USESTATE} />
 				</Switch>
 			</div>
 		</BrowserRouter>
