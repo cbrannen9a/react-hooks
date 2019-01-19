@@ -7,7 +7,8 @@ import { routes } from '../constants/routes';
 const Home = () => {
 	return (
 		<div className='App-header'>
-			<LinkButton to={routes.USESTATE} title='UseState' />			
+			<LinkButton to={routes.USESTATE} title='UseState' />
+			<LinkButton to={routes.USEEFFECT} title='UseEffect' />
 		</div>
 	);
 };
