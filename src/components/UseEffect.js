@@ -5,13 +5,19 @@ import LinkButton from './utilities/LinkButton';
 import { routes } from '../constants/routes';
 import ComponentBlock from './ComponentBlock';
 import { UseEffect, UseEffectII } from './withHooks/useEffect/index';
+import { WithEffect } from './withoutHooks/withEffect/index';
 
 const getExample = (example) => {
 	switch (example) {
 		case 1:
-			return <ComponentBlock component={<UseEffect />}
-				fileName='withHooks/useEffect/useEffect.1'
-				title='UseEffect Hook example' />;
+			return (<div>
+				<ComponentBlock component={<UseEffect />}
+					fileName='withHooks/useEffect/useEffect.1'
+					title='UseEffect Hook example' />
+				<ComponentBlock component={<WithEffect />}
+					fileName='withHooks/withEffect/withEffect.1'
+					title='Incrementing Counter' />
+			</div>);
 		case 2:
 			return <ComponentBlock component={<UseEffectII />}
 				fileName='withHooks/useEffect/useEffect.2'
