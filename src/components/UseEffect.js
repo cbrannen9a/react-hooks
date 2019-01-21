@@ -15,7 +15,7 @@ const getExample = (example) => {
 					fileName='withHooks/useEffect/useEffect.1'
 					title='UseEffect Hook example' />
 				<ComponentBlock component={<WithEffect />}
-					fileName='withHooks/withEffect/withEffect.1'
+					fileName='withoutHooks/withEffect/withEffect.1'
 					title='Incrementing Counter' />
 			</div>);
 		case 2:
