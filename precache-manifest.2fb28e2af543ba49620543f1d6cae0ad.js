@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-hooks/static/css/main.610eae79.chunk.css"
   },
   {
-    "revision": "b2c99201c14b21079b22d36f4394ec86",
+    "revision": "85107fe9f55dce3eb8d0afcd9d93f548",
     "url": "/react-hooks/index.html"
   }
 ];
